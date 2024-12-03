@@ -1,0 +1,19 @@
+
+#outer-box{
+    background-color: teal;
+    padding-block: 50px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-box{
+    border: solid pink 50px;
+    background-color: salmon;
+    width: 200px;
+    height: 200px;
+}
+
+

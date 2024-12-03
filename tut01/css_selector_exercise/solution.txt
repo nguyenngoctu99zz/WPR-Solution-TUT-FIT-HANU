@@ -1,0 +1,8 @@
+" H2 {} "
+" #intro "
+" #intro h2 "
+" #content h2, #footer h2 "
+" #content p "
+" #content > p "
+" .bordered "
+" h2.bordered "

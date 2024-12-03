@@ -1,0 +1,8 @@
+| data.company  --> "H City Zoo" 
+| data['company'] --> "H City Zoo" 
+| data.people[1].email --> "jjorg1@i2i.jp" 
+| data['ticket-prices'].adult --> 9.95 
+| data['ticket-prices'].child --> 5.95 
+| data['ticket-prices'] --> { "adult": 9.95, "child": 5.95 } 
+| data.age-median --> Syntax error
+| data['age-median'] --> 20 

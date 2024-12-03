@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejecting a Promise</title>
+    <style>
+        #message {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="rejectButton">Hủy bỏ</button>
+    <div id="message">Promise resolved in 5 seconds</div>
+
+    <script>
+        let countdown = 5;
+        let interval;
+
+        const messageDiv = document.getElementById('message');
+        const button = document.getElementById('rejectButton');
+
+        // Hàm đếm ngược
+        function startCountdown() {
+            interval = setInterval(() => {
+                countdown--;
+                messageDiv.textContent = `Promise resolved in ${countdown} seconds`;
+
+                if (countdown <= 0) {
+                    clearInterval(interval);
+                    messageDiv.textContent = "Promise has resolved";
+                }
+            }, 1000);
+        }
+
+        // Xử lý sự kiện khi nhấn nút
+        button.addEventListener('click', () => {
+            clearInterval(interval);
+            messageDiv.textContent = "Promise has failed to resolve";
+        });
+
+        startCountdown();
+    </script>
+</body>
+</html>

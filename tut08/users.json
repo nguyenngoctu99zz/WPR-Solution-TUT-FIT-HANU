@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Tuyen Tom",
+        "username": "tuyentom19",
+        "password": "123123",
+        "avatar": "picture/avatar.png",
+        "signupTime": ""
+    },
+    {
+        "id": 2,
+        "name": "Tuyen Tom 2",
+        "username": "tuyentom191",
+        "password": "123123",
+        "avatar": "pictures/avatar.png",
+        "signupTime": ""
+    }
+]

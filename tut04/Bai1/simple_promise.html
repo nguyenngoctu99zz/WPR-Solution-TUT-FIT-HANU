@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Promise</title>
+</head>
+<body>
+    <script>
+       
+        const promiseOne = new Promise((resolve) => {
+            setTimeout(() => {
+                resolve('promise one is done!');
+            }, 5000);
+        });
+
+        promiseOne.then((message) => {
+            console.log(message);
+        });
+
+  
+        async function asyncFunction() {
+            const message = await promiseOne;
+            console.log(message);
+        }
+
+        asyncFunction();
+    </script>
+</body>
+</html>
